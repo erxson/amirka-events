@@ -1,0 +1,5 @@
+name: AmirkaEvents
+version: '${project.version}'
+main: xd.ericsson.amirkaevents.AmirkaEvents
+author: erxson
+api-version: '1.20'
