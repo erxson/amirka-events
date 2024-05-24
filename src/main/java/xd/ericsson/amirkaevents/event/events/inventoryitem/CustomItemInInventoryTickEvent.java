@@ -1,13 +1,10 @@
-package xd.ericsson.amirkaevents.event.events.holditem;
+package xd.ericsson.amirkaevents.event.events.inventoryitem;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
-import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
+import xd.ericsson.amirkaevents.event.Event;
 
 public class CustomItemInInventoryTickEvent extends Event {
-    private static final HandlerList handlers = new HandlerList();
-
     private final Player player;
     private final ItemStack itemStack;
 
@@ -22,13 +19,5 @@ public class CustomItemInInventoryTickEvent extends Event {
 
     public ItemStack getItemStack() {
         return this.itemStack;
-    }
-
-    public HandlerList getHandlers() {
-        return handlers;
-    }
-
-    public static HandlerList getHandlerList() {
-        return handlers;
     }
 }

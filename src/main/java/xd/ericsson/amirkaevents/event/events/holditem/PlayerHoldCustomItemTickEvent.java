@@ -1,14 +1,11 @@
 package xd.ericsson.amirkaevents.event.events.holditem;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
-import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.MainHand;
+import xd.ericsson.amirkaevents.event.Event;
 
 public class PlayerHoldCustomItemTickEvent extends Event {
-    private static final HandlerList handlers = new HandlerList();
-
     private final Player player;
     private final ItemStack itemStack;
     private final MainHand hand;
@@ -29,13 +26,5 @@ public class PlayerHoldCustomItemTickEvent extends Event {
 
     public MainHand getHand() {
         return this.hand;
-    }
-
-    public HandlerList getHandlers() {
-        return handlers;
-    }
-
-    public static HandlerList getHandlerList() {
-        return handlers;
     }
 }

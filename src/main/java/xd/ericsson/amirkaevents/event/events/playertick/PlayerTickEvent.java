@@ -1,12 +1,9 @@
 package xd.ericsson.amirkaevents.event.events.playertick;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
-import org.bukkit.event.HandlerList;
+import xd.ericsson.amirkaevents.event.Event;
 
 public class PlayerTickEvent extends Event {
-    private static final HandlerList handlers = new HandlerList();
-
     private final Player player;
     private final boolean online;
 
@@ -21,14 +18,5 @@ public class PlayerTickEvent extends Event {
 
     public boolean isOnline() {
         return this.online;
-    }
-
-
-    public HandlerList getHandlers() {
-        return handlers;
-    }
-
-    public static HandlerList getHandlerList() {
-        return handlers;
     }
 }

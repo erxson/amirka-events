@@ -40,20 +40,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.ospaindustries</groupId>
-                <artifactId>dice-test-uploader</artifactId>
-                <version>0.2-TEST</version>
-                <executions>
-                    <execution>
-                        <id>jar uploading</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>upload</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
         <resources>
             <resource>

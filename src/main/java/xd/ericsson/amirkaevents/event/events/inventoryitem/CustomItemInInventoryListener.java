@@ -6,7 +6,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
-import xd.ericsson.amirkaevents.event.events.holditem.CustomItemInInventoryTickEvent;
 import xd.ericsson.amirkaevents.event.events.playertick.PlayerTickEvent;
 
 import java.util.Arrays;

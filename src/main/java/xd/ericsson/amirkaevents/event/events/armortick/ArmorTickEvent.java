@@ -1,13 +1,10 @@
 package xd.ericsson.amirkaevents.event.events.armortick;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
-import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
+import xd.ericsson.amirkaevents.event.Event;
 
 public class ArmorTickEvent extends Event {
-    private static final HandlerList handlers = new HandlerList();
-
     private final ItemStack itemStack;
     private final Player player;
 
@@ -22,14 +19,6 @@ public class ArmorTickEvent extends Event {
 
     public Player getPlayer() {
         return this.player;
-    }
-
-    public HandlerList getHandlers() {
-        return handlers;
-    }
-
-    public static HandlerList getHandlerList() {
-        return handlers;
     }
 
     public static class Helmet extends ArmorTickEvent {
