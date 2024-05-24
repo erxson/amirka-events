@@ -15,8 +15,6 @@ public final class AmirkaEvents extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        this.getLogger().info("ниггер");
-
         Registry.getListeners().forEach(
                 (listener -> Bukkit.getPluginManager().registerEvents(listener, this))
         );
